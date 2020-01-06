@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="korean">
+    <!--
+        lang 속성 중요한 접근어플리케이션
+        head안의 내용은 나오지 않는다
+        
+
+     -->
+    <head>
+        <title>방구석여행사_피란수도</title>
+        <meta charset="utf-8">
+        <link href="bangcss.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, iniitial-scale=1">
+        <!--아직 자바안씀 20200102
+        <link href="index.js" rel="javascriptpage">
+        <link href="index.js" rel="javascript" type="text/javascript">
+    
+    --> 
+        
+
+        
+        <script type="text/javascript">
+         //메인에서 다음 넘어가기 권유 이벤트,    
+         function funname1() {
+             alert('진짜 시작?');alert('자신있나?');alert('그렇다면 레츠기릿');
+             window.location='index01.html';
+         }
+
+
+
+
+
+        </script>
+   
+        <link href="https://fonts.googleapis.com/css?family=Blac
+        k+And+White+Picture|Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
+
+
+    </head>
+
+    <!--
+        12/27
+        빅데이터 서버 프로그램 구현
+        -요구사항 확인
+        -서버프로그램구현 jsp (java server Page)-포트폴리오,구두발표
+         서버상에서-백엔드 /화면상에서 -프론트엔드
+        -인터페이스구현: jQuery, 서술형평가, 실기시험
+        -통합구현: 서술형 평가
+
+        반응형 웹사이트 웹상에서 고정된 것일때. \
+        빅데이터수집분석:파이썬,R,수집,분석,시각화,실기시험
+        자바스크립트-jsp-jquerty, 파이썬,R
+                                  전자정부표준프레임워크(스프림)
+        정적웹프로그램-html,css,javascript, jquery
+
+        동적웹프로그램-PHP, ASP, ASP.NET, Jsp(javaserverpage)
+
+        jsp 설치
+        1. java 동작-JDK 프로그램설치 
+        2. 서버페이지 만들어야함. 아파치?
+        3. DB서버 jvm-운영체제 상관없이
+        4. 개발툴
+
+        어떻게 동작할 것인가??
+
+
+   
+        
+
+
+ 
+    
+    -->
+
+   <body>
+       <scirpt src="index.js">
+        
+
+       </scirpt>
+    
+    <header>
+    
+      <h2>피란수도_부산 ver.1 by</h2>
+
+    
+    
+      <hr>
+       <p>
+           1950년 6.25 피란속에서 '아무개'의 성장이야기
+       </p>
+
+      <hr>
+      
+
+    </header>
+
+    
+   <article>
+       <!--
+           1. 사진을 어떻게 움직이게 할까? 역동적으로 html,css정도로
+       -->
+       <h4>그시절 그모습..</h4>
+
+
+       <img src="img/피란2.jpg" alt="보급상자 타는 사람들"> <br><br><br><br><br><br>
+       
+    <!--처음 배울때, 시작하기 단순히 링크걸기
+        ->버튼으로 할 순 없을까?라고 생각, 
+       <h2><a href="index01.html" >시작하기</a></h2>
+       
+    -->
+  
+
+        <!--
+            html attributes 들은 부가적 정보를 나타넨다 element에 대한
+
+        -->
+
+        <h4>진행 간단 요약</h4>
+
+        <!--slidshow container-->
+        <div class="ss-ct">
+            <div class="mySlides fade">
+                <div clase="numbertext">1 / 3</div>
+                <img src="img/메인피란.jpg">
+                <div class="text">1950 6.25 발발</div>
+            </div>  
+            
+            <!-- class 에서 ㅇㅇ 쓰고 ㅇㅇ 띄워쓰면 두가지로 식별가능-->
+            <div class="mySlides fade">
+                <div clase="numbertext">2 / 3</div>
+                <img src="img/메인피란1.jpg">
+                <div class="text">피란수도로 남하</div>
+                
+            </div>
+            <div class="mySlides fade">
+                <div clase="numbertext">3 / 3</div>
+                <img src="img/메인피란2.jpg">
+                <div class="text">생존, 그리고 졸업</div>
+                
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+        </div>
+
+        <br>
+
+        <div class="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+
+
+
+
+        
+
+
+   <!--
+        <br>
+        좀더 역동적 웹을위한<br><br><br>
+
+        <img src="img/메인피란.jpg"><br>
+        전쟁시작<br>
+        <img src="img/메인피란1.jpg"><br>
+
+        캐릭남하 장면<br>
+        <img src="img/메인피란2.jpg">
+        <br><br><br><br>
+   -->
+
+           <br><br>
+     <!--필요할때 꺼내 쓸 수 있는 함수로 지정하기 전에 썼던 것
+        그런데 그 버튼이 만페이지에 적용해야된다면? 메세지를 만페이지에 바꿔야한다면?
+
+
+
+       <input type="button" value="시작하기" onclick="
+            alert('진행하시겠습니까?');
+            alert('빠질텐데 후회안할?');
+            window.location='index01.html';"/>
+
+     -->
+ 
+      
+        <input type="button" value="진행하기" onclick="funname1()">
+
+
+    
+
+
+
+   </article>
+    
+    
+    
+
+
+
+
+    </body>
+
+
+
+
+
+
+</html>

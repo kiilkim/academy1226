@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+
+    
+           // fun1() 함수정의 메세지출력 "안녕javascript"
+           function fun1() {
+               alert("안녕 javascript")
+           }
+           // fun2() 함수 정의 두수를 받아서 합을 구해서 출력
+           function fun2() {
+               var a = 20
+               var b = 30
+               alert(a+b);
+
+           }
+
+           // 세개의 수를 받아서 합을 구해서 리턴
+           // NaN =not a number
+            function fun3(x,y,z) {
+              
+               
+                return x+y+z;
+                
+        
+
+               
+            }
+            function fun4(x,y) {
+                
+                return x*y;
+               
+            }
+            function fun5(x,y) {
+                //x=매년 납입금
+                //y=매년 이자
+                alert(x*y); //첫해 이자
+                alert(x+(x*y));//첫해 잔액
+
+
+                alert((x+(x*y))+x) //두째해 저금
+                alert(((x+(x*y))+x)*y) //두째해이자
+
+                
+               
+            }
+          
+
+      
+        
+
+    </script>
+    
+
+
+</head>
+<body>
+    <input type="button" value="출력버튼" onclick="
+        fun1()"
+    >
+    <input type="button" value="출력버튼" onclick="
+        fun2()"
+    >
+    <input type="button" value="출력버튼" onclick="
+        alert(fun3(10,20,30))"
+    >
+    <input type="button" value="출력버튼" onclick="
+        alert(fun4(20,30))"
+    >
+    <input type="button" value="이자금액" onclick="
+        fun5(12000000,0.05)"
+    >
+
+
+
+    
+</body>
+</html>

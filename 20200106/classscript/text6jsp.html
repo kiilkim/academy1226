@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+    //내장함수
+    //alert("메세지출력")
+
+
+    
+    // 두개중하나 선택->if
+
+   /*  if(a==true) {
+        alert("반갑습니다");
+    } else {
+        alert("안녕히가세요");
+    } */
+    
+ /*    a = confirm ("회원가입") ;
+    alert(a);
+
+    if(a==true) {
+        alert("회원가입 축하드립니다.")
+
+    } else {
+        alert("들어오는건 맘대로지만 나가는건 없다.")
+    } */
+     
+
+    //prompt는
+
+    //문자 숫자로 변경 parseInt()
+    //a = prompt ("닉네임을 입력하세요","입력하는곳");
+    //alert(a);
+    //alert(a+100);
+   //문자를 숫자로 변해주고 더한다. 
+
+   // 문자를 입력하면, 그 문자에 할당된 숫자를 기본능력치+해준다. 예를들어 체력이 100부터시작하면
+   //만약 옷을 선택했다면 +20 이라던가, 빵을 2개먹으면 +20된다던가 등등
+
+
+    //alert(parseInt(a)+100);
+    //alert(a*100);
+
+    /* if (a) {
+        alert("자 그럼 시작해봅시다");
+    } else {
+        alert("그냥 가시려구요? 재밌을텐데?ㅠㅠ");
+    }
+ */  
+  /* d=prompt("값을 입력하세요","입력하는곳");
+  alert(d);
+  
+  alert(isNaN(d))
+
+  if (isNaN(d)==true) {
+      alert("문자입력 했네요");
+
+  } else {
+      alert("숫자입력 했네요");
+  }
+ */
+  // 값을 입력받아서 
+  // 문자이면 받은값 출력, 
+  // 숫자면 받은값에+100 해서 출력
+
+/*   a = prompt ("입력하세요")
+  alert(isNaN(a));
+  if (isNaN(a)//넘버가 아니냐?==true응 문자야) {
+      alert(a); //문자그대로
+  } else //아니야 숫자야{ 
+      alert(parseInt(a)+100); //숫자+55 =합
+  } */
+
+  a = prompt("몇개 사용하시겠습니까?(숫자만)")
+  alert(a) ;
+   if (a==true) {
+       alert(a+'개 사용하셨습니다') //후에 능력치반영된 다음페이지 
+   } else {
+       alert("다시 입력해주세요");
+   }
+
+
+ //객체를 할것이다. 변수는 하나의 값에 하나의 값
+ // 기억장소 하나만 가지곤 힘들다, 그래서 객체를 할것이다 .object 
+ //면밀하게 분석, 오브잭트안에 여러변수 특징뽑아서 변수에 저장, , 총점, 평균, 등등, 
+ // 브라우저 제어가 자바스크립트에만 있음.. !!// 
+  
+
+
+
+
+/*0103 수업중에 아이디어 접목
+
+ 0. confirm 함수로 하는것
+
+ 1. prompt 함수 이용  문자를 입력하면, 그 문자에 할당된 숫자를 기본능력치+해준다. 예를들어 체력이 100부터시작하면
+   만약 옷을 선택했다면 +20 이라던가, 빵을 2개먹으면 +20된다던가 등등
+   parseInt(많이쓰임 더하기 계산때)와 parseFloat 이용 
+
+2. isNAN()is not a number 숫자가 아니냐? true 문자 false 숫자 
+  1) 만약 실수로 유저가 한글네임 말고 숫자를 넣었다면 ,숫자는 아니라고 한글입력하라고 한다. 
+
+3. 빵을 사용해야한다 체력+위해서 
+  a = prompt("몇개 사용하시겠습니까?(숫자만)")
+  alert(isNaN(a)) ;
+   if (isNaN(a)==true) {
+       alert(isNaN(a)+"개 사용하셨습니다")
+   } else {
+       alert("다시 입력해주세요")
+   }
+
+*/
+   
+
+
+
+
+
+    
+    
+    </script>
+
+</head>
+<body>
+  
+    
+
+    
+</body>
+
+</html>
